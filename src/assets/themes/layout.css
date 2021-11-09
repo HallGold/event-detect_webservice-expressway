@@ -1,0 +1,892 @@
+@import 'font/iconfont.css';
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li,
+dl,
+dt,
+dd {
+  margin: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+.largeFont {
+  font-size: 30px !important;
+  font-weight: 700 !important;
+}
+.bigFont {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+.minFont {
+  font-size: 14px !important;
+}
+.blueFont {
+  color: #00fcff !important;
+}
+.greenFont {
+  color: #00ffa8 !important;
+}
+.errorFont {
+  color: #ff5151 !important;
+}
+.grayFont {
+  color: #a5a8b4 !important;
+}
+.yellowFont {
+  color: #ffd84e !important;
+}
+.titleFont {
+  font-size: 24px !important;
+}
+.boldFont {
+  font-weight: bold;
+}
+.absoluteBox {
+  position: absolute;
+}
+.fullScreen {
+  width: 100%;
+  height: 100%;
+}
+.centerText {
+  text-align: center !important;
+}
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  background: url(images/bg.jpg) no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.wrapper .content {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  transition: all 0.5s;
+}
+.wrapper .content .logo {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.wrapper .content .nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+.wrapper .content .nav .navMain {
+  position: relative;
+}
+.wrapper .content .nav .navMain .navItem {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-left: 24px;
+  cursor: pointer;
+  position: relative;
+}
+.wrapper .content .nav .navMain .navItem .navIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.wrapper .content .nav .navMain .navItem .navIcon .mark {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background-color: #fa7575;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.wrapper .content .nav .navMain .navItem .moreIcon {
+  background-image: url(images/menu.svg);
+}
+.wrapper .content .nav .navMain .navItem .moreIcon:hover {
+  background-image: url(images/menuHover.svg);
+}
+.wrapper .content .nav .navMain .navItem .messageIcon {
+  background-image: url(images/message.svg);
+}
+.wrapper .content .main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.wrapper .content .main .overview {
+  width: 842px;
+  height: 128px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(37, 53, 125, 0.4);
+}
+.wrapper .content .main .overview .overviewMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 32px 64px;
+  display: flex;
+}
+.wrapper .content .main .overview .overviewMain .overviewItem {
+  flex: 1;
+  text-align: center;
+}
+.wrapper .content .main .overview .overviewMain .overviewItem .overviewItemMain {
+  display: inline-block;
+  text-align: left;
+}
+.wrapper .content .main .overview .overviewMain .overviewItem .overviewName {
+  color: #a5a8b4;
+  line-height: 32px;
+}
+.wrapper .content .main .overview .overviewMain .overviewItem .overviewVal {
+  color: #a5a8b4;
+}
+.paddingBottom24 {
+  padding-bottom: 24px !important;
+}
+.paddingBottom30 {
+  padding-bottom: 30px !important;
+}
+.paddingBottom18 {
+  padding-bottom: 18px !important;
+}
+.paddingBottom12 {
+  padding-bottom: 12px !important;
+}
+.paddingTop12 {
+  padding-top: 12px !important;
+}
+.horn:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #00fcff;
+  border-left: 2px solid #00fcff;
+}
+.horn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #00fcff;
+  border-right: 2px solid #00fcff;
+}
+.horn .hornMain:before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-bottom: 2px solid #00fcff;
+  border-left: 2px solid #00fcff;
+}
+.horn .hornMain:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  border-bottom: 2px solid #00fcff;
+  border-right: 2px solid #00fcff;
+}
+.minHorn:before {
+  border-top-width: 1px;
+  border-left-width: 1px;
+}
+.minHorn:after {
+  border-top-width: 1px;
+  border-right-width: 1px;
+}
+.minHorn .hornMain:before {
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+}
+.minHorn .hornMain:after {
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+}
+.inlineBlock {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 4px;
+}
+.init {
+  line-height: 24px;
+  margin-top: 12px;
+}
+.trend {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  display: inline-block;
+  margin-top: 16px;
+}
+.trend .icons {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  vertical-align: top;
+}
+.trend .up {
+  background-image: url(images/up.svg);
+}
+.trend .down {
+  background-image: url(images/down.svg);
+}
+.normalTrend {
+  margin-top: 6px;
+}
+.partTitle {
+  position: relative;
+  height: 32px;
+}
+.partTitle .names {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  display: inline-block;
+  vertical-align: top;
+}
+.partTitle .filters {
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: 32px;
+}
+.partTitle .filters .filterBlock {
+  position: relative;
+  padding-right: 24px;
+  height: 32px;
+  line-height: 32px;
+  color: #a5a8b4;
+  cursor: pointer;
+}
+.partTitle .filters .filterBlock:after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: url(images/arrow.png) no-repeat;
+  background-size: 100%;
+}
+.partTitle .filters .filterBlock:hover {
+  color: #00fcff;
+}
+.partTitle .filters .dropDown {
+  position: absolute;
+  right: 0;
+  background-color: rgba(37, 53, 125, 0.8);
+  display: none;
+  z-index: 999;
+}
+.partTitle .filters .dropDown .filterItems {
+  padding: 0 24px;
+  white-space: nowrap;
+  line-height: 42px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #a5a8b4;
+}
+.partTitle .filters .dropDown .filterItems:hover {
+  color: #00fcff;
+}
+.partTitle .filters:hover .dropDown {
+  display: block;
+}
+.partTitle .showMore {
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: 32px;
+}
+.partTitle .showMore .showMoreBlock {
+  position: relative;
+  padding-right: 24px;
+  height: 32px;
+  line-height: 32px;
+  color: #a5a8b4;
+  cursor: pointer;
+}
+.partTitle .showMore .showMoreBlock:after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: url(images/showMore.png) no-repeat;
+  background-size: 100%;
+}
+.partTitle .showMore .showMoreBlock:hover {
+  color: #00fcff;
+}
+.leftPart {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+}
+.rightPart {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+}
+.bottomPart {
+  position: absolute;
+  bottom: 0;
+  left: 348px;
+  right: 348px;
+}
+.part {
+  position: relative;
+  padding-bottom: 30px;
+}
+.part:last-child {
+  padding-bottom: 0;
+}
+.part:last-child .partContent {
+  padding-bottom: 0;
+}
+.part .partContent {
+  padding-top: 18px;
+}
+.part .partContent .flexBox {
+  display: flex;
+  margin-left: -48px;
+}
+.part .partContent .flexBox .flexItems {
+  flex: 1;
+}
+.part .partContent .flexBox .flexItems .flexItemsWrapper {
+  margin-left: 48px;
+  position: relative;
+}
+.part .partContent .flexBox .flexItems .flexItemsWrapper .statisticsBlock {
+  display: block;
+}
+.part .partContent .flexBox .flexItems .flexItemsWrapper .flexList {
+  position: relative;
+}
+.part .partContent .flexBox .flexItems .flexItemsWrapper .flexList .flexListBlock {
+  padding-bottom: 12px;
+}
+.part .partContent .flexBox .flexItems .flexItemsWrapper .flexList .flexListBlock:last-child {
+  padding-bottom: 0;
+}
+.part .partContent .flexBox .flexItems .flexItemsWrapper .flexList .flexListBlockData {
+  line-height: 24px;
+}
+.part .partContent .minflexBox {
+  margin-left: -12px;
+}
+.part .partContent .minflexBox .flexItems .flexItemsWrapper {
+  margin-left: 12px;
+}
+.showDataTitle {
+  padding-bottom: 6px;
+}
+.showData {
+  display: inline-block;
+  position: relative;
+  padding: 6px 12px;
+}
+.showBlock {
+  position: relative;
+}
+.showArrow {
+  position: relative;
+  padding-right: 24px;
+}
+.showArrow:after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: url(images/showMore.png) no-repeat;
+  background-size: 100%;
+}
+.list {
+  position: relative;
+}
+.list .listItem {
+  position: relative;
+  margin-bottom: 18px;
+  padding-right: 32px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.list .listItem:last-child {
+  margin-bottom: 0;
+}
+.list .listItem .handle {
+  position: absolute;
+  height: 24px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 24px;
+  display: none;
+}
+.list .listItem .handle .handleBtn {
+  height: 24px;
+  line-height: 22px;
+  box-sizing: border-box;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+}
+.list .listItem:hover {
+  padding-left: 6px;
+}
+.list .listItem:hover .handle {
+  display: block;
+}
+.graphical {
+  margin-top: 24px;
+}
+.bottomFlex {
+  position: relative;
+  display: flex;
+  margin-left: -20px;
+}
+.bottomFlex .bottomFlexItem {
+  flex: 1;
+}
+.bottomFlex .bottomFlexItem .bottomFlexWrapper {
+  margin-left: 24px;
+  min-height: 280px;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: rgba(26, 56, 232, 0.2);
+}
+.tabs {
+  text-align: center;
+  padding-top: 6px;
+}
+.tabs .tabBlock {
+  display: inline-block;
+  padding: 0 12px;
+  color: #a5a8b4;
+  font-size: 14px;
+  line-height: 36px;
+  position: relative;
+  cursor: pointer;
+}
+.tabs .tabBlock:after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00fcff;
+  opacity: 0;
+}
+.tabs .tabBlock:hover {
+  color: #00fcff;
+}
+.tabs .activeBlock {
+  color: #00fcff;
+}
+.tabs .activeBlock:after {
+  opacity: 1;
+}
+.block {
+  position: relative;
+}
+.block .leftBlock {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.block .rightBlock {
+  top: 0;
+  position: absolute;
+  right: 0;
+}
+.titleBlock {
+  line-height: 32px;
+}
+.inlineBtn {
+  display: inline-block;
+  padding: 0 18px;
+  color: #fff;
+  cursor: pointer;
+}
+.activeInlineBtn {
+  background-color: #0041b6;
+  border-radius: 12px 12px 12px 0;
+}
+.flowDate {
+  position: relative;
+}
+.centerPart {
+  position: absolute;
+  left: 348px;
+  right: 348px;
+  top: 180px;
+  bottom: 300px;
+}
+.loginMain {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(images/loginMainBg.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.loginMain .loginLogo {
+  width: 600px;
+  height: 106px;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  margin-left: -300px;
+}
+.loginMain .loginLogo .describeLogo {
+  position: absolute;
+  bottom: 12px;
+  left: 6px;
+  line-height: 18px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.loginMain .loginMian {
+  width: 540px;
+  position: absolute;
+  top: 320px;
+  height: 296px;
+  left: 50%;
+  margin-left: -300px;
+  background-color: #0648ce;
+  border-radius: 8px;
+  border-top: 2px solid rgba(255, 255, 255, 0.4);
+}
+.loginMain .loginMian .loginTitle {
+  padding: 36px 0 24px 180px;
+  line-height: 24px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+.loginMain .loginMian .loginLine {
+  position: relative;
+  margin-bottom: 18px;
+  font-size: 0;
+}
+.loginMain .loginMian .loginLine .loginLabel {
+  display: inline-block;
+  position: relative;
+  width: 180px;
+  text-align: right;
+  font-size: 16px;
+  line-height: 36px;
+  vertical-align: top;
+  color: #fff;
+}
+.loginMain .loginMian .loginLine .loginBox {
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+}
+.loginMain .loginMian .loginLine .loginBox .ivu-input {
+  height: 36px;
+}
+.loginMain .loginMian .loginBtnBox {
+  padding: 12px 0 0 180px;
+  position: relative;
+}
+.loginMain .loginMian .loginBtnBox .loginBtn {
+  position: relative;
+  border: none;
+  height: 42px;
+  cursor: pointer;
+  background-color: #00fcff;
+  font-size: 20px;
+  width: 216px;
+  color: #fff;
+  border-radius: 4px;
+  outline: none;
+  transition: backgroundColor 0.5s;
+}
+.loginMain .loginMian .loginBtnBox .loginBtn:hover {
+  background-color: #db342c;
+}
+.loginMain .loginWrapper {
+  width: 880px;
+  height: 348px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -62%);
+  font-size: 0;
+}
+.loginMain .loginWrapper .wrapperItem {
+  position: relative;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+.loginMain .loginWrapper .leftWrapper {
+  background-color: rgba(0, 108, 255, 0.4);
+  border-radius: 12px 0 0 12px;
+  width: 50%;
+}
+.loginMain .loginWrapper .rightWrapper {
+  background-color: #fff;
+  border-radius: 0 12px 12px 0;
+  width: 50%;
+}
+.loginMain .loginWrapper .systemTitle {
+  padding-left: 32px;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  padding-bottom: 40px;
+  position: relative;
+}
+.loginMain .loginWrapper .systemTitle:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background-color: #00deff;
+  left: 28px;
+  border-radius: 2px;
+  bottom: 0;
+}
+.loginMain .loginWrapper .systemTitle .systemdes {
+  color: #fff;
+  line-height: 48px;
+  font-size: 30px;
+  font-weight: normal;
+}
+.loginMain .loginWrapper .systemTitle .systemName {
+  font-size: 30px;
+  color: #fff;
+  line-height: 42px;
+  font-weight: 700;
+}
+.loginMain .loginWrapper .loginTitle {
+  padding-left: 32px;
+  padding-top: 48px;
+  line-height: 48px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+.loginMain .loginWrapper .loginForm {
+  padding: 24px 32px;
+}
+.loginMain .loginWrapper .loginForm .loginLabel {
+  position: relative;
+  margin-bottom: 15px;
+}
+.loginMain .loginWrapper .loginForm .loginLabel .labelIcon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  z-index: 9;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+}
+.loginMain .loginWrapper .loginForm .loginLabel .loginuser {
+  background-image: url(images/loginUser.png);
+}
+.loginMain .loginWrapper .loginForm .loginLabel .loginpassword {
+  background-image: url(images/loginPassword.png);
+}
+.loginMain .loginWrapper .loginForm .nomarginBottom {
+  margin-bottom: 0;
+}
+.loginMain .loginWrapper .loginForm .loginformlabel {
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding-left: 48px;
+  position: relative;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.2s;
+}
+.loginMain .loginWrapper .loginForm .loginformlabel:hover {
+  border-color: #4b7fe8;
+  color: #333;
+}
+.loginMain .loginWrapper .loginForm input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px white inset !important;
+}
+.loginMain .loginWrapper .loginForm .loginSubmitBox {
+  padding-top: 28px;
+}
+.loginMain .loginWrapper .loginForm .loginSubmitBox .loginBtn {
+  height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #0056f1;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+.loginMain .loginWrapper .loginForm .loginSubmitBox .loginBtn:hover {
+  background-color: #0049cc;
+}
+.navList {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 240px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+  transition: all 0.5s;
+  transform: translateX(100%);
+}
+.navList .navBtn {
+  padding: 24px;
+  position: relative;
+}
+.navList .navBtn .navBtnIcon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(images/closeNavIcon.png) no-repeat;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.navList .navBtn .navBtnIcon:hover {
+  transform: rotate(90deg);
+}
+.navList .navItem {
+  padding: 0 30px;
+  white-space: nowrap;
+  font-size: 16px;
+  cursor: pointer;
+  color: #a5a8b4;
+  transition: all 0.5s;
+}
+.navList .navItem .routerLink {
+  display: inline-block;
+  line-height: 48px;
+}
+.navList .navItem:hover {
+  padding-left: 36px;
+}
+.navList .navItem:hover .routerLink {
+  color: #00fcff;
+}
+.navList .navItem .routerLink {
+  color: #a5a8b4;
+}
+.navList .navItem .routerLink .menuIcon {
+  padding-right: 12px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+.transformNav {
+  transform: translateX(0);
+}
+.blur {
+  filter: blur(4px) !important;
+}
+.maskLayout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.leftMain {
+  position: absolute;
+  left: 0;
+  top: 180px;
+  width: 180px;
+  min-height: 600px;
+  box-sizing: border-box;
+}
+.rightMain {
+  position: absolute;
+  left: 280px;
+  top: 180px;
+  right: 0;
+}
+.rightMain .rightContent {
+  background-color: rgba(0, 234, 255, 0.2);
+  min-height: 600px;
+}
+.partColumn {
+  height: 44px;
+  line-height: 32px;
+  box-sizing: border-box;
+  text-align: center;
+  background: url(images/menuBg.png) no-repeat top center;
+  padding-bottom: 12px;
+  font-size: 24px;
+  font-weight: 700;
+}
